@@ -13,7 +13,7 @@ spec:
     image: docker:1.11
     imagePullPolicy: Always
     command:
-    - /busybox/cat
+    - cat
     tty: true
     volumeMounts:
     - mountPath: /var/run/docker.sock
