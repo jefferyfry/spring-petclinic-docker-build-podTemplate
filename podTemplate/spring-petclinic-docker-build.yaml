@@ -23,3 +23,5 @@ spec:
    - name: docker-sock
      hostPath:
       path: /var/run/docker.sock
+  securityContext:
+    runAsUser: 1000
