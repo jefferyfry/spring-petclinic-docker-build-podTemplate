@@ -9,6 +9,8 @@ spec:
     command:
     - cat
     tty: true
+    securityContext:
+      runAsUser: 1000
   - name: docker
     image: docker:1.11
     imagePullPolicy: Always
@@ -23,5 +25,4 @@ spec:
    - name: docker-sock
      hostPath:
       path: /var/run/docker.sock
-  securityContext:
-    runAsUser: 1000
+  
